@@ -1,10 +1,10 @@
-package com.kaltura.Live.model.dao
+package com.borhan.Live.model.dao
 
 import java.util.Date
 
-import com.kaltura.Live.infra.SerializedSession
-import com.kaltura.Live.model.aggregation.processors.PeakAudience
-import com.kaltura.Live.utils.DateUtils
+import com.borhan.Live.infra.SerializedSession
+import com.borhan.Live.model.aggregation.processors.PeakAudience
+import com.borhan.Live.utils.DateUtils
 import eu.inn.binders.cassandra._
 import eu.inn.binders.naming.PlainConverter
 
@@ -26,7 +26,7 @@ object LiveEvents
           val updateTime = latest(thisHour, new Date(peak.updateTime.getTime-(1000L*120)))
 
           val entryId = peak.entryId
-          val res = cql"select * from kaltura_live.live_events where entry_id=$entryId and event_time >= $updateTime and event_time < $nextHour"
+          val res = cql"select * from borhan_live.live_events where entry_id=$entryId and event_time >= $updateTime and event_time < $nextHour"
           res.all[LiveEvents]
 
      }

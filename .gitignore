@@ -1,12 +1,12 @@
-KalturaLiveAnalytics/.settings/
-KalturaLiveAnalytics/build/
-KalturaLiveInfra/bin/
-KalturaLiveModel/bin/
+BorhanLiveAnalytics/.settings/
+BorhanLiveAnalytics/build/
+BorhanLiveInfra/bin/
+BorhanLiveModel/bin/
 .classpath
 .project
 IP2Location/.settings/org.eclipse.wst.common.component
 IP2Location/.settings/org.eclipse.wst.common.project.facet.core.xml
-KalturaLiveAnalytics/target/
+BorhanLiveAnalytics/target/
 NewLiveAnalytics/target/
 NewLiveAnalytics/project/
 NewLiveAnalytics/lib_managed/

@@ -1,8 +1,8 @@
-package com.kaltura.live.model.aggregation.functions.save;
+package com.borhan.live.model.aggregation.functions.save;
 
-import com.kaltura.live.infra.cache.SerializableSession;
-import com.kaltura.live.model.aggregation.dao.LiveEntryLocationEventDAO;
-import com.kaltura.live.model.aggregation.dao.LiveEventDAO;
+import com.borhan.live.infra.cache.SerializableSession;
+import com.borhan.live.model.aggregation.dao.LiveEntryLocationEventDAO;
+import com.borhan.live.model.aggregation.dao.LiveEventDAO;
 
 public class LiveEntryLocationSave extends LiveEventSave {
 	

@@ -1,4 +1,4 @@
-package com.kaltura.ip2location;
+package com.borhan.ip2location;
 
 import java.io.Externalizable;
 import java.io.IOException;

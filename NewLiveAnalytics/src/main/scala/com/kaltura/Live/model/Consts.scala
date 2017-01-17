@@ -1,10 +1,10 @@
-package com.kaltura.Live.model
+package com.borhan.Live.model
 
 /**
  * Created by ofirk on 4/29/15.
  */
 object Consts {
-  val KalturaKeySpace = "kaltura_live"
+  val BorhanKeySpace = "borhan_live"
 
   val BufferTimeResolution = 100L
 }

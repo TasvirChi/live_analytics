@@ -1,4 +1,4 @@
-package com.kaltura.live.webservice;
+package com.borhan.live.webservice;
 
 import javax.annotation.Resource;
 import javax.jws.WebService;
@@ -9,22 +9,22 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.slf4j.MDC;
 
-import com.kaltura.live.webservice.model.AnalyticsException;
-import com.kaltura.live.webservice.model.LiveEntriesListResponse;
-import com.kaltura.live.webservice.model.LiveEventsListResponse;
-import com.kaltura.live.webservice.model.LiveReportInputFilter;
-import com.kaltura.live.webservice.model.LiveReportPager;
-import com.kaltura.live.webservice.model.LiveReportType;
-import com.kaltura.live.webservice.model.LiveStatsListResponse;
-import com.kaltura.live.webservice.reporters.BaseReporter;
-import com.kaltura.live.webservice.reporters.EntryTimeLineReporter;
-import com.kaltura.live.webservice.reporters.LivePartnerEntryService;
-import com.kaltura.live.webservice.reporters.ReportersFactory;
+import com.borhan.live.webservice.model.AnalyticsException;
+import com.borhan.live.webservice.model.LiveEntriesListResponse;
+import com.borhan.live.webservice.model.LiveEventsListResponse;
+import com.borhan.live.webservice.model.LiveReportInputFilter;
+import com.borhan.live.webservice.model.LiveReportPager;
+import com.borhan.live.webservice.model.LiveReportType;
+import com.borhan.live.webservice.model.LiveStatsListResponse;
+import com.borhan.live.webservice.reporters.BaseReporter;
+import com.borhan.live.webservice.reporters.EntryTimeLineReporter;
+import com.borhan.live.webservice.reporters.LivePartnerEntryService;
+import com.borhan.live.webservice.reporters.ReportersFactory;
 import com.sun.xml.ws.api.message.Header;
 import com.sun.xml.ws.api.message.HeaderList;
 import com.sun.xml.ws.developer.JAXWSProperties;
 
-@WebService(endpointInterface="com.kaltura.live.webservice.LiveAnalytics")
+@WebService(endpointInterface="com.borhan.live.webservice.LiveAnalytics")
 public class LiveAnalyticsImpl implements LiveAnalytics {
 
 	protected static Logger logger = LoggerFactory.getLogger(LiveAnalytics.class);
@@ -38,7 +38,7 @@ public class LiveAnalyticsImpl implements LiveAnalytics {
 		HeaderList hl = (HeaderList) context.get(JAXWSProperties.INBOUND_HEADER_LIST_PROPERTY);
 		String sessionId = "UNKNWON";
 		for (Header header : hl) {
-			if(header.getLocalPart().equals("KALTURA_SESSION_ID")) {
+			if(header.getLocalPart().equals("BORHAN_SESSION_ID")) {
 				sessionId = header.getStringContent();
 				break;
 			}

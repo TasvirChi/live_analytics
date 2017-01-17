@@ -1,4 +1,4 @@
-package com.kaltura.live.model.aggregation.functions.save;
+package com.borhan.live.model.aggregation.functions.save;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -9,13 +9,13 @@ import scala.Tuple2;
 
 import com.datastax.driver.core.BoundStatement;
 import com.datastax.driver.core.PreparedStatement;
-import com.kaltura.live.infra.cache.SerializableSession;
-import com.kaltura.live.model.aggregation.StatsEvent;
-import com.kaltura.live.model.aggregation.dao.LiveEntryEventDAO;
-import com.kaltura.live.model.aggregation.dao.LiveEntryPeakDAO;
-import com.kaltura.live.model.aggregation.dao.LiveEventDAO;
-import com.kaltura.live.model.aggregation.keys.EntryHourlyKey;
-import com.kaltura.live.model.aggregation.keys.EventKey;
+import com.borhan.live.infra.cache.SerializableSession;
+import com.borhan.live.model.aggregation.StatsEvent;
+import com.borhan.live.model.aggregation.dao.LiveEntryEventDAO;
+import com.borhan.live.model.aggregation.dao.LiveEntryPeakDAO;
+import com.borhan.live.model.aggregation.dao.LiveEventDAO;
+import com.borhan.live.model.aggregation.keys.EntryHourlyKey;
+import com.borhan.live.model.aggregation.keys.EventKey;
 
 public class LiveEntryHourlyMaxAudienceSave extends LiveEventSave {
 
@@ -24,7 +24,7 @@ public class LiveEntryHourlyMaxAudienceSave extends LiveEventSave {
 	/** The session connecting to the cassandra instance */
 	protected SerializableSession session;
 	
-	private static final String TABLE_NAME = "kaltura_live.hourly_live_events";
+	private static final String TABLE_NAME = "borhan_live.hourly_live_events";
 	
 	/**
 	 * Constructor

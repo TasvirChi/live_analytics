@@ -1,4 +1,4 @@
-package com.kaltura.live.infra.utils;
+package com.borhan.live.infra.utils;
 
 import java.io.FileInputStream;
 import java.io.InputStream;
@@ -57,9 +57,9 @@ public class LiveConfiguration {
 	}
 	
 	static protected String getConfigurationPath() {
-		String confPath = "/opt/kaltura";
-    	if (System.getenv().containsKey("KALTURA_CONF_PATH")) {
-    		confPath = System.getenv().get("KALTURA_CONF_PATH");
+		String confPath = "/opt/borhan";
+    	if (System.getenv().containsKey("BORHAN_CONF_PATH")) {
+    		confPath = System.getenv().get("BORHAN_CONF_PATH");
     	}
     	return confPath + "/config.properties";
 	}

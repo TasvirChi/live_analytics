@@ -1,7 +1,7 @@
-package com.kaltura.live.webservice.reporters;
+package com.borhan.live.webservice.reporters;
 
-import com.kaltura.city2Location.CityLocator;
-import com.kaltura.country2location.CountryLocator;
+import com.borhan.city2Location.CityLocator;
+import com.borhan.country2location.CountryLocator;
 
 public class GeographicalLocatorsCache {
 	

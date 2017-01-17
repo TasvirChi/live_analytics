@@ -1,4 +1,4 @@
-package com.kaltura.live.model.aggregation.dao;
+package com.borhan.live.model.aggregation.dao;
 
 import java.io.Serializable;
 import java.util.Arrays;
@@ -8,8 +8,8 @@ import org.apache.commons.lang.StringUtils;
 
 import com.datastax.driver.core.PreparedStatement;
 import com.datastax.driver.core.Row;
-import com.kaltura.live.infra.cache.SerializableSession;
-import com.kaltura.live.model.aggregation.StatsEvent;
+import com.borhan.live.infra.cache.SerializableSession;
+import com.borhan.live.model.aggregation.StatsEvent;
 
 public abstract class LiveDAO implements Serializable {
 

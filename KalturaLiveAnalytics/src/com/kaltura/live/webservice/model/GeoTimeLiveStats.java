@@ -1,6 +1,6 @@
-package com.kaltura.live.webservice.model;
+package com.borhan.live.webservice.model;
 
-import com.kaltura.ip2location.Coordinate;
+import com.borhan.ip2location.Coordinate;
 
 public class GeoTimeLiveStats extends EntryLiveStats {
 

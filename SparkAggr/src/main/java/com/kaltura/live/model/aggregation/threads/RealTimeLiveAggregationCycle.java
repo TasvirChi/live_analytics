@@ -1,10 +1,10 @@
-package com.kaltura.live.model.aggregation.threads;
+package com.borhan.live.model.aggregation.threads;
 
-import com.kaltura.live.model.aggregation.filter.StatsEventsFilter;
-import com.kaltura.live.model.aggregation.filter.StatsEventsRealTimeFilter;
-import com.kaltura.live.model.aggregation.functions.map.LiveEventMap;
-import com.kaltura.live.model.aggregation.functions.reduce.LiveEventReduce;
-import com.kaltura.live.model.aggregation.functions.save.LiveEventSave;
+import com.borhan.live.model.aggregation.filter.StatsEventsFilter;
+import com.borhan.live.model.aggregation.filter.StatsEventsRealTimeFilter;
+import com.borhan.live.model.aggregation.functions.map.LiveEventMap;
+import com.borhan.live.model.aggregation.functions.reduce.LiveEventReduce;
+import com.borhan.live.model.aggregation.functions.save.LiveEventSave;
 
 
 public class RealTimeLiveAggregationCycle extends LiveAggregationCycle {

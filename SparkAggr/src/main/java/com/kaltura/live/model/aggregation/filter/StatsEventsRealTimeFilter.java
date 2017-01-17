@@ -1,10 +1,10 @@
-package com.kaltura.live.model.aggregation.filter;
+package com.borhan.live.model.aggregation.filter;
 
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
-import com.kaltura.live.infra.utils.DateUtils;
-import com.kaltura.live.infra.utils.LiveConfiguration;
+import com.borhan.live.infra.utils.DateUtils;
+import com.borhan.live.infra.utils.LiveConfiguration;
 
 public class StatsEventsRealTimeFilter extends StatsEventsFilter {
 

@@ -1,4 +1,4 @@
-package com.kaltura.live.model.aggregation.dao;
+package com.borhan.live.model.aggregation.dao;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,8 +8,8 @@ import org.slf4j.LoggerFactory;
 
 import com.datastax.driver.core.BoundStatement;
 import com.datastax.driver.core.Row;
-import com.kaltura.live.infra.cache.SerializableSession;
-import com.kaltura.live.model.aggregation.StatsEvent;
+import com.borhan.live.infra.cache.SerializableSession;
+import com.borhan.live.model.aggregation.StatsEvent;
 
 public class LiveEntryReferrerEventDAO extends LiveEventDAO {
 	
@@ -33,7 +33,7 @@ public class LiveEntryReferrerEventDAO extends LiveEventDAO {
 
 	@Override
 	public String getTableName() {
-		return "kaltura_live.hourly_live_events_referrer";
+		return "borhan_live.hourly_live_events_referrer";
 	}
 
 	@Override

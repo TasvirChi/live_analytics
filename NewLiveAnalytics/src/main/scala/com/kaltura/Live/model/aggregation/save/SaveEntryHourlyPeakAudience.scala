@@ -1,10 +1,10 @@
-package com.kaltura.Live.model.aggregation.save
+package com.borhan.Live.model.aggregation.save
 
 import com.datastax.driver.core.Cluster
-import com.kaltura.Live.env.EnvParams
-import com.kaltura.Live.infra.SerializedSession
-import com.kaltura.Live.model.LiveEvent
-import com.kaltura.Live.model.dao.EntryHourlyPeakAudienceCF
+import com.borhan.Live.env.EnvParams
+import com.borhan.Live.infra.SerializedSession
+import com.borhan.Live.model.LiveEvent
+import com.borhan.Live.model.dao.EntryHourlyPeakAudienceCF
 
 import scala.concurrent.Future
 
@@ -14,7 +14,7 @@ import scala.concurrent.Future
 //class SaveEntryHourlyPeakAudience extends Serializable
 //{
 ////     val cluster = Cluster.builder().addContactPoint(EnvParams.cassandraAddress).build()
-////     val session = cluster.connect(EnvParams.kalturaKeySpace)
+////     val session = cluster.connect(EnvParams.borhanKeySpace)
 //
 //
 //

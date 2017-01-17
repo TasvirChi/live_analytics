@@ -1,4 +1,4 @@
-package com.kaltura.live.webservice;
+package com.borhan.live.webservice;
 
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
@@ -8,13 +8,13 @@ import javax.jws.soap.SOAPBinding.Style;
 import javax.xml.ws.RequestWrapper;
 import javax.xml.ws.ResponseWrapper;
 
-import com.kaltura.live.webservice.model.AnalyticsException;
-import com.kaltura.live.webservice.model.LiveEntriesListResponse;
-import com.kaltura.live.webservice.model.LiveEventsListResponse;
-import com.kaltura.live.webservice.model.LiveReportInputFilter;
-import com.kaltura.live.webservice.model.LiveReportPager;
-import com.kaltura.live.webservice.model.LiveReportType;
-import com.kaltura.live.webservice.model.LiveStatsListResponse;
+import com.borhan.live.webservice.model.AnalyticsException;
+import com.borhan.live.webservice.model.LiveEntriesListResponse;
+import com.borhan.live.webservice.model.LiveEventsListResponse;
+import com.borhan.live.webservice.model.LiveReportInputFilter;
+import com.borhan.live.webservice.model.LiveReportPager;
+import com.borhan.live.webservice.model.LiveReportType;
+import com.borhan.live.webservice.model.LiveStatsListResponse;
 
 @WebService
 @SOAPBinding(style = Style.RPC)

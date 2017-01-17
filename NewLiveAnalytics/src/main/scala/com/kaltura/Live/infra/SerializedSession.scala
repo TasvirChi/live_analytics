@@ -1,7 +1,7 @@
-package com.kaltura.Live.infra
+package com.borhan.Live.infra
 
 import com.datastax.driver.core.{ConsistencyLevel, QueryOptions, Cluster}
-import com.kaltura.Live.model.Consts
+import com.borhan.Live.model.Consts
 
 /**
  * Created by didi on 3/24/15.
@@ -9,5 +9,5 @@ import com.kaltura.Live.model.Consts
 object SerializedSession extends Serializable
 {
      val cluster = Cluster.builder().addContactPoint(ConfigurationManager.get("cassandra.node_name")).withQueryOptions(new QueryOptions().setConsistencyLevel(ConsistencyLevel.QUORUM)).build()
-     val session = cluster.connect(Consts.KalturaKeySpace)
+     val session = cluster.connect(Consts.BorhanKeySpace)
 }

@@ -1,9 +1,9 @@
-package com.kaltura.Live.infra
+package com.borhan.Live.infra
 
 import java.io.{IOException, InputStreamReader, BufferedReader, ByteArrayInputStream}
 import java.util.zip.GZIPInputStream
 
-import com.kaltura.Live.utils.{BaseLog, MetaLog}
+import com.borhan.Live.utils.{BaseLog, MetaLog}
 
 object BlobExtractor extends Serializable with MetaLog[BaseLog]
 {

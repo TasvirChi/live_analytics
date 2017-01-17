@@ -1,4 +1,4 @@
-package com.kaltura.live.webservice.reporters;
+package com.borhan.live.webservice.reporters;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -6,13 +6,13 @@ import java.util.Date;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.kaltura.live.infra.cache.SerializableSession;
-import com.kaltura.live.infra.utils.DateUtils;
-import com.kaltura.live.infra.utils.LiveConfiguration;
-import com.kaltura.live.webservice.model.AnalyticsException;
-import com.kaltura.live.webservice.model.LiveReportInputFilter;
-import com.kaltura.live.webservice.model.LiveReportPager;
-import com.kaltura.live.webservice.model.LiveStatsListResponse;
+import com.borhan.live.infra.cache.SerializableSession;
+import com.borhan.live.infra.utils.DateUtils;
+import com.borhan.live.infra.utils.LiveConfiguration;
+import com.borhan.live.webservice.model.AnalyticsException;
+import com.borhan.live.webservice.model.LiveReportInputFilter;
+import com.borhan.live.webservice.model.LiveReportPager;
+import com.borhan.live.webservice.model.LiveStatsListResponse;
 
 /**
  * Interface for statistics generation

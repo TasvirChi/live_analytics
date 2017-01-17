@@ -1,4 +1,4 @@
-package com.kaltura.live;
+package com.borhan.live;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -15,32 +15,32 @@ import org.apache.spark.api.java.JavaSparkContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.kaltura.live.infra.cache.SerializableSession;
-import com.kaltura.live.infra.utils.DateUtils;
-import com.kaltura.live.infra.utils.LiveConfiguration;
-import com.kaltura.live.model.aggregation.StatsEvent;
-import com.kaltura.live.model.aggregation.functions.map.LiveEntryAggrMap;
-import com.kaltura.live.model.aggregation.functions.map.LiveEntryHourlyMap;
-import com.kaltura.live.model.aggregation.functions.map.LiveEntryLocationMap;
-import com.kaltura.live.model.aggregation.functions.map.LiveEntryMap;
-import com.kaltura.live.model.aggregation.functions.map.LiveEntryReferrerMap;
-import com.kaltura.live.model.aggregation.functions.map.PartnerHourlyMap;
-import com.kaltura.live.model.aggregation.functions.map.StatsEventMap;
-import com.kaltura.live.model.aggregation.functions.reduce.LiveEventMaxAudience;
-import com.kaltura.live.model.aggregation.functions.reduce.LiveEventReduce;
-import com.kaltura.live.model.aggregation.functions.save.LiveEntryHourlyMaxAudienceSave;
-import com.kaltura.live.model.aggregation.functions.save.LiveEntryHourlySave;
-import com.kaltura.live.model.aggregation.functions.save.LiveEntryLocationSave;
-import com.kaltura.live.model.aggregation.functions.save.LiveEntryReferrerSave;
-import com.kaltura.live.model.aggregation.functions.save.LiveEntrySave;
-import com.kaltura.live.model.aggregation.functions.save.PartnerHourlySave;
-import com.kaltura.live.model.aggregation.threads.EntryRealTimeLiveAggregationCycle;
-import com.kaltura.live.model.aggregation.threads.HourlyLiveAggregationCycle;
-import com.kaltura.live.model.aggregation.threads.LiveAggregationCycle;
-import com.kaltura.live.model.aggregation.threads.RealTimeLiveAggregationCycle;
-import com.kaltura.live.model.logs.functions.FilterOldFileIds;
-import com.kaltura.live.model.logs.functions.GetNewFileIds;
-import com.kaltura.live.model.logs.functions.LoadNewFiles;
+import com.borhan.live.infra.cache.SerializableSession;
+import com.borhan.live.infra.utils.DateUtils;
+import com.borhan.live.infra.utils.LiveConfiguration;
+import com.borhan.live.model.aggregation.StatsEvent;
+import com.borhan.live.model.aggregation.functions.map.LiveEntryAggrMap;
+import com.borhan.live.model.aggregation.functions.map.LiveEntryHourlyMap;
+import com.borhan.live.model.aggregation.functions.map.LiveEntryLocationMap;
+import com.borhan.live.model.aggregation.functions.map.LiveEntryMap;
+import com.borhan.live.model.aggregation.functions.map.LiveEntryReferrerMap;
+import com.borhan.live.model.aggregation.functions.map.PartnerHourlyMap;
+import com.borhan.live.model.aggregation.functions.map.StatsEventMap;
+import com.borhan.live.model.aggregation.functions.reduce.LiveEventMaxAudience;
+import com.borhan.live.model.aggregation.functions.reduce.LiveEventReduce;
+import com.borhan.live.model.aggregation.functions.save.LiveEntryHourlyMaxAudienceSave;
+import com.borhan.live.model.aggregation.functions.save.LiveEntryHourlySave;
+import com.borhan.live.model.aggregation.functions.save.LiveEntryLocationSave;
+import com.borhan.live.model.aggregation.functions.save.LiveEntryReferrerSave;
+import com.borhan.live.model.aggregation.functions.save.LiveEntrySave;
+import com.borhan.live.model.aggregation.functions.save.PartnerHourlySave;
+import com.borhan.live.model.aggregation.threads.EntryRealTimeLiveAggregationCycle;
+import com.borhan.live.model.aggregation.threads.HourlyLiveAggregationCycle;
+import com.borhan.live.model.aggregation.threads.LiveAggregationCycle;
+import com.borhan.live.model.aggregation.threads.RealTimeLiveAggregationCycle;
+import com.borhan.live.model.logs.functions.FilterOldFileIds;
+import com.borhan.live.model.logs.functions.GetNewFileIds;
+import com.borhan.live.model.logs.functions.LoadNewFiles;
 
 /**
  * This class is the main class responsible for the spark aggregation
@@ -187,7 +187,7 @@ public class SparkAggregation {
 //				 config.getRepositoryHome() + "/live-infra-1.0.0.jar",
 //				 config.getRepositoryHome() + "/ip-2-location-1.0.0.jar" };
 		Map<String, String> env = new HashMap<String, String>();
-		env.put("KALTURA_CONF_PATH", System.getenv().get("KALTURA_CONF_PATH"));
+		env.put("BORHAN_CONF_PATH", System.getenv().get("BORHAN_CONF_PATH"));
 		
 		final JavaSparkContext jsc = new JavaSparkContext(config.getSparkMaster(),
                 "SparkAggr", config.getSparkHome(), jars, env);

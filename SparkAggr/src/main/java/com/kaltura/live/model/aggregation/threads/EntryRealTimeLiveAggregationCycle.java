@@ -1,17 +1,17 @@
-package com.kaltura.live.model.aggregation.threads;
+package com.borhan.live.model.aggregation.threads;
 
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 
-import com.kaltura.live.model.aggregation.StatsEvent;
-import com.kaltura.live.model.aggregation.filter.StatsEventsHourlyFilter;
-import com.kaltura.live.model.aggregation.functions.map.LiveEntryAggrMap;
-import com.kaltura.live.model.aggregation.functions.map.LiveEventMap;
-import com.kaltura.live.model.aggregation.functions.reduce.LiveEventMaxAudience;
-import com.kaltura.live.model.aggregation.functions.reduce.LiveEventReduce;
-import com.kaltura.live.model.aggregation.functions.save.LiveEntryHourlyMaxAudienceSave;
-import com.kaltura.live.model.aggregation.functions.save.LiveEventSave;
-import com.kaltura.live.model.aggregation.keys.EventKey;
+import com.borhan.live.model.aggregation.StatsEvent;
+import com.borhan.live.model.aggregation.filter.StatsEventsHourlyFilter;
+import com.borhan.live.model.aggregation.functions.map.LiveEntryAggrMap;
+import com.borhan.live.model.aggregation.functions.map.LiveEventMap;
+import com.borhan.live.model.aggregation.functions.reduce.LiveEventMaxAudience;
+import com.borhan.live.model.aggregation.functions.reduce.LiveEventReduce;
+import com.borhan.live.model.aggregation.functions.save.LiveEntryHourlyMaxAudienceSave;
+import com.borhan.live.model.aggregation.functions.save.LiveEventSave;
+import com.borhan.live.model.aggregation.keys.EventKey;
 
 public class EntryRealTimeLiveAggregationCycle extends RealTimeLiveAggregationCycle {
 

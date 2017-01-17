@@ -1,14 +1,14 @@
-package com.kaltura.Live
+package com.borhan.Live
 
 import com.datastax.spark.connector._
 import com.datastax.spark.connector.writer.{TTLOption, WriteConf}
 import com.google.common.base.Charsets
 import com.google.common.io.Resources
-import com.kaltura.Live.infra.{ConfigurationManager, EventsGenerator}
-import com.kaltura.Live.model.LiveEvent
-import com.kaltura.Live.model.aggregation.processors.PeakAudienceNewProcessor
-import com.kaltura.Live.model.purge.DataCleaner
-import com.kaltura.Live.utils.{BaseLog, MetaLog}
+import com.borhan.Live.infra.{ConfigurationManager, EventsGenerator}
+import com.borhan.Live.model.LiveEvent
+import com.borhan.Live.model.aggregation.processors.PeakAudienceNewProcessor
+import com.borhan.Live.model.purge.DataCleaner
+import com.borhan.Live.utils.{BaseLog, MetaLog}
 import org.apache.spark.SparkContext._
 import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}
@@ -44,7 +44,7 @@ object MainDriver extends MetaLog[BaseLog]
           "slf4j-api-1.6.4.jar",
           "jsr166e-1.1.0.jar")
 
-     val keyspace = "kaltura_live"
+     val keyspace = "borhan_live"
 
      val baseFieldsList  = List(
           "event_time",

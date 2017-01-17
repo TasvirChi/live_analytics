@@ -1,9 +1,9 @@
-package com.kaltura.live.model.aggregation.functions.map;
+package com.borhan.live.model.aggregation.functions.map;
 
-import com.kaltura.live.infra.utils.DateUtils;
-import com.kaltura.live.model.aggregation.StatsEvent;
-import com.kaltura.live.model.aggregation.keys.EntryReferrerKey;
-import com.kaltura.live.model.aggregation.keys.EventKey;
+import com.borhan.live.infra.utils.DateUtils;
+import com.borhan.live.model.aggregation.StatsEvent;
+import com.borhan.live.model.aggregation.keys.EntryReferrerKey;
+import com.borhan.live.model.aggregation.keys.EventKey;
 
 import scala.Tuple2;
 

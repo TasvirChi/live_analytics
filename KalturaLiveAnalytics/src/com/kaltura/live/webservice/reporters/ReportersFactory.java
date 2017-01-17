@@ -1,6 +1,6 @@
-package com.kaltura.live.webservice.reporters;
+package com.borhan.live.webservice.reporters;
 
-import com.kaltura.live.webservice.model.LiveReportType;
+import com.borhan.live.webservice.model.LiveReportType;
 
 /**
  *	Factory for reporters

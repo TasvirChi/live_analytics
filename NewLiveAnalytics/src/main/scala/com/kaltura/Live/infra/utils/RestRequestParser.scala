@@ -1,6 +1,6 @@
-package com.kaltura.Live.infra.utils
+package com.borhan.Live.infra.utils
 
-import com.kaltura.Live.utils.{BaseLog, MetaLog}
+import com.borhan.Live.utils.{BaseLog, MetaLog}
 
 import java.io.UnsupportedEncodingException
 import java.net.URLDecoder

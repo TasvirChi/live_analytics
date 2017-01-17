@@ -1,4 +1,4 @@
-package com.kaltura.Live.model.parse
+package com.borhan.Live.model.parse
 
 import org.scalatest.FunSuite
 

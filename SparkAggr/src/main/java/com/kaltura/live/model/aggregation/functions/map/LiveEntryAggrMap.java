@@ -1,13 +1,13 @@
-package com.kaltura.live.model.aggregation.functions.map;
+package com.borhan.live.model.aggregation.functions.map;
 
 import org.apache.spark.api.java.function.PairFunction;
 
 import scala.Tuple2;
 
-import com.kaltura.live.infra.utils.DateUtils;
-import com.kaltura.live.model.aggregation.StatsEvent;
-import com.kaltura.live.model.aggregation.keys.EntryHourlyKey;
-import com.kaltura.live.model.aggregation.keys.EventKey;
+import com.borhan.live.infra.utils.DateUtils;
+import com.borhan.live.model.aggregation.StatsEvent;
+import com.borhan.live.model.aggregation.keys.EntryHourlyKey;
+import com.borhan.live.model.aggregation.keys.EventKey;
 
 public class LiveEntryAggrMap implements PairFunction<Tuple2<EventKey, StatsEvent>, EventKey, StatsEvent> {
 

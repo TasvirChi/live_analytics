@@ -1,6 +1,6 @@
-package com.kaltura.live.webservice.reporters;
+package com.borhan.live.webservice.reporters;
 
-import com.kaltura.live.webservice.model.LiveStats;
+import com.borhan.live.webservice.model.LiveStats;
 
 public class ReportsAggregator {
 	

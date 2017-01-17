@@ -1,4 +1,4 @@
-package com.kaltura.live.webservice.reporters;
+package com.borhan.live.webservice.reporters;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -10,10 +10,10 @@ import org.slf4j.LoggerFactory;
 
 import com.datastax.driver.core.ResultSet;
 import com.datastax.driver.core.Row;
-import com.kaltura.live.infra.cache.SerializableSession;
-import com.kaltura.live.infra.utils.LiveConfiguration;
-import com.kaltura.live.model.aggregation.dao.LivePartnerEntryDAO;
-import com.kaltura.live.webservice.model.LiveEntriesListResponse;
+import com.borhan.live.infra.cache.SerializableSession;
+import com.borhan.live.infra.utils.LiveConfiguration;
+import com.borhan.live.model.aggregation.dao.LivePartnerEntryDAO;
+import com.borhan.live.webservice.model.LiveEntriesListResponse;
 
 public class LivePartnerEntryService {
 
@@ -26,7 +26,7 @@ public class LivePartnerEntryService {
 
 	public LiveEntriesListResponse getLiveEntries(Integer partnerId) {
 		
-		String query = "select * from kaltura_live.live_partner_entry where partner_id = " + partnerId + ";";
+		String query = "select * from borhan_live.live_partner_entry where partner_id = " + partnerId + ";";
 		logger.debug(query);
 		ResultSet results = session.getSession().execute(query);
         Date dateBefore36Hours = new Date(new Date().getTime() - 36 * 3600 * 1000L);

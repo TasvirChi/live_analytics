@@ -1,10 +1,10 @@
-package com.kaltura.live.model.aggregation.functions.map;
+package com.borhan.live.model.aggregation.functions.map;
 
 import scala.Tuple2;
 
-import com.kaltura.live.model.aggregation.StatsEvent;
-import com.kaltura.live.model.aggregation.keys.EventKey;
-import com.kaltura.live.model.aggregation.keys.PartnerKey;
+import com.borhan.live.model.aggregation.StatsEvent;
+import com.borhan.live.model.aggregation.keys.EventKey;
+import com.borhan.live.model.aggregation.keys.PartnerKey;
 
 public class PartnerMap extends LiveEventMap {
 

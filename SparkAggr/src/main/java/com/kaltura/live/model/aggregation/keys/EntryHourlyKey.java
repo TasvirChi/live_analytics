@@ -1,8 +1,8 @@
-package com.kaltura.live.model.aggregation.keys;
+package com.borhan.live.model.aggregation.keys;
 
 import java.util.Date;
 
-import com.kaltura.live.model.aggregation.StatsEvent;
+import com.borhan.live.model.aggregation.StatsEvent;
 
 public class EntryHourlyKey extends EntryKey {
 

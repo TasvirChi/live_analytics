@@ -1,16 +1,16 @@
-package com.kaltura.live.client;
+package com.borhan.live.client;
 
 import java.net.URL;
 
 import javax.xml.namespace.QName;
 import javax.xml.ws.Service;
 
-import com.kaltura.live.webservice.LiveAnalytics;
-import com.kaltura.live.webservice.model.AnalyticsException;
-import com.kaltura.live.webservice.model.LiveEventsListResponse;
-import com.kaltura.live.webservice.model.LiveReportInputFilter;
-import com.kaltura.live.webservice.model.LiveReportPager;
-import com.kaltura.live.webservice.model.LiveReportType;
+import com.borhan.live.webservice.LiveAnalytics;
+import com.borhan.live.webservice.model.AnalyticsException;
+import com.borhan.live.webservice.model.LiveEventsListResponse;
+import com.borhan.live.webservice.model.LiveReportInputFilter;
+import com.borhan.live.webservice.model.LiveReportPager;
+import com.borhan.live.webservice.model.LiveReportType;
 
 public class TestClient{
 	
@@ -18,8 +18,8 @@ public class TestClient{
 	
 	public static void main(String[] args) throws Exception {
 	   
-		URL url = new URL("http://" + HOST_NAME + "/KalturaLiveAnalytics/KalturaLiveAnalytics?wsdl");
-        QName qname = new QName("http://webservice.live.kaltura.com/", "LiveAnalyticsImplService");
+		URL url = new URL("http://" + HOST_NAME + "/BorhanLiveAnalytics/BorhanLiveAnalytics?wsdl");
+        QName qname = new QName("http://webservice.live.borhan.com/", "LiveAnalyticsImplService");
 
         Service service = Service.create(url, qname);
         LiveAnalytics hello = service.getPort(LiveAnalytics.class);
